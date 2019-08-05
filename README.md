@@ -13,8 +13,7 @@ https://ixx9x10k8k.execute-api.us-east-1.amazonaws.com/venn/vis.svg?labels=inter
 
 Find the `labels` in URL (eg: `labels=intersection,hello,world,bla`), try changing it to something more clever, eg:
 
-
-https://ixx9x10k8k.execute-api.us-east-1.amazonaws.com/venn/vis.svg?labels=success,hard work,luck
+[labels=success,hard work,luck](https://ixx9x10k8k.execute-api.us-east-1.amazonaws.com/venn/vis.svg?labels=success,hard+work,luck)
 
 
 ## What is this?
@@ -28,4 +27,4 @@ eg: `<img src="https://ixx9x10k8k.execute-api.us-east-1.amazonaws.com/venn/vis.s
 
 ## How it works?
 
-Request for a venn service hits AWS Gateway API, which triggers AWS Lambda function, which in turn, generates SVG string. [Rough.js](https://roughjs.com/) is used to generate handdrawn-like diagram. [Indie-Flower] (https://fonts.google.com/specimen/Indie+Flower) font was used to give a hand-written style. This font was embedded as base64 string in order to enable Venn diagram to be embedded as an image source.
+Request for a venn service hits AWS Gateway API, which triggers AWS Lambda function, which in turn, generates SVG string. [Rough.js](https://roughjs.com/) is used to generate hand-drawn diagram. [Indie-Flower](https://fonts.google.com/specimen/Indie+Flower) font was used to give a hand-written style. This font was embedded as base64 string in order to enable Venn diagram to be embedded as an image source.
