@@ -1,0 +1,26 @@
+{
+  "name": "venn-generator",
+  "version": "1.0.0",
+  "description": "Venn Diagram generator",
+  "main": "index.js",
+  "author": "Djam Saidmuradov",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "build": "rm -rf dist && babel src --out-dir dist && yarn install --production --modules-folder dist/node_modules && (cd dist; zip -r lambda.zip .;cd ..;)",
+    "publish-lambda": "aws lambda update-function-code --function-name venn-generator-function --zip-file fileb://dist/lambda.zip"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "jsdom": "^15.1.1",
+    "roughjs": "^3.1.0",
+    "w3c-xmlserializer": "^1.1.2"
+  }
+}
