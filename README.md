@@ -43,7 +43,7 @@ Oh, did I mention emojies are allowed:
 
 [?labels=😎,🙂,🕶️](https://ixx9x10k8k.execute-api.us-east-1.amazonaws.com/venn/vis.svg?labels=😎,🙂,🕶️)
 
-![venn demo](docs/demo3.png "sunglasses venn diagram")
+![venn demo](docs/demo4.png "sunglasses venn diagram")
 
 <br/><br/>
 
